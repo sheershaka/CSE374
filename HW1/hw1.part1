@@ -1,0 +1,67 @@
+Script started on Sat Apr  6 21:31:29 2019
+]0;sa1998@klaatu:~ [?1034h[sa1998@klaatu ~]$ echo G[K"Greetings, CSE374:[K"
+Greetings, CSE374
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ passwd
+Changing password for user sa1998.
+Changing password for sa1998.
+(current) UNIX password: 
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ date '+%D %T'
+04/06/19 21:33:15
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ #*************File paths and directory navigato[Kion*******
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ echo ~
+/homes/sa1998
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ cs[Kd ~
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ ls -a
+[0m[38;5;27m.[0m   .bash_history  .bash_profile  .emacs  [38;5;27m.mozilla[0m  hw0.script
+[38;5;27m..[0m  .bash_logout   .bashrc        .kshrc  .zshrc    hw1.part1
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ mkdir temp
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ mv temp HWFiles
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ cd HWFiles/
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ date > now
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ cp now before
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ ls -l
+total 8
+-rw-rw-r-- 1 sa1998 sa1998 29 Apr  6 21:35 before
+-rw-rw-r-- 1 sa1998 sa1998 29 Apr  6 21:35 now
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ touch tempdata[K[K[K[K[K[K[Kmpdata
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ mv tmpdata test
+]0;sa1998@klaatu:~/HWFiles [sa1998@klaatu HWFiles]$ cd ../
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ rm -r HE[KWFiles
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ #*******************PE[Kermissions*****************
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ echo For my eyes[K[K[K[K[K[K[K[K[K[K[K[K "For my eyes O[Konly" > secretfile
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ chmod -w secretfile
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ ls -l
+total 8
+-rw-rw-r-- 1 sa1998 sa1998 811 Apr  1 22:01 hw0.script
+-rw-rw-r-- 1 sa1998 sa1998   0 Apr  6 21:31 hw1.part1
+-r--r--r-- 1 sa1998 sa1998  17 Apr  6 21:38 secretfile
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ cat "text text" >> secretfile
+bash: secretfile: Permission denied
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ ch [Kmod -r secretfile
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ ls -l
+total 8
+-rw-rw-r-- 1 sa1998 sa1998 811 Apr  1 22:01 hw0.script
+-rw-rw-r-- 1 sa1998 sa1998   0 Apr  6 21:31 hw1.part1
+---------- 1 sa1998 sa1998  17 Apr  6 21:38 secretfile
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ cat secretfile
+cat: secretfile: Permission denied
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ $[K#*************Process Information***************
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ uname -r
+4.9.84-1.el7.retpoline.x86_64
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ ps -u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sa1998     974  0.0  0.0 151044  3736 pts/4    R+   21:40   0:00 ps -u
+sa1998   27353  0.0  0.0 115400  3284 pts/22   Ss   20:19   0:00 -bash
+sa1998   32737  0.0  0.0 114156  1844 pts/22   S+   21:31   0:00 script hw1.pa
+sa1998   32739  0.0  0.0 114160  1216 pts/22   S+   21:31   0:00 script hw1.pa
+sa1998   32740  0.0  0.0 115404  3432 pts/4    Ss   21:31   0:00 bash -i
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ #lo[K[K**************Searching*******************8
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ grep sa1998 /etc/sa1998[K[K[K[K[Kpasswd
+[01;31m[Ksa1998[m[K:x:28503:28503::/homes/[01;31m[Ksa1998[m[K:/bin/bash
+]0;sa1998@klaatu:~ [sa1998@klaatu ~]$ exit
+exit
+
+Script done on Sat Apr  6 21:43:13 2019

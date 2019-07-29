@@ -1,0 +1,28 @@
+# Sheershak Agarwal
+# HW2
+# Problem 4
+# 16 April 2019
+
+# checking if there are less than 2 arguments
+if [ $# -lt 2 ]; then
+  echo 'less than two arguments'
+  exit 1
+fi
+
+RESULT="$1"
+TOTAL=0
+
+shift
+
+date >> "$RESULT"
+
+for i in "$@"; do
+  for j in "$i"; do  # gettings the files from the directories
+    lines=$(awk '{x++} END {print x}' $j)  #count the number of lines in file $j    
+    echo "$lines $(basename $j)" >> "$RESULT"
+    (( TOTAL+=lines ))
+  done
+done
+
+echo "$TOTAL total" >> "$RESULT"
+exit 0

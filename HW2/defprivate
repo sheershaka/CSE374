@@ -1,0 +1,8 @@
+# Sheershak Agarwal
+# HW2
+# Problem 2
+# 12 April 2019
+
+# -R to change files and directories recursively
+# g=u means group = users and o-w means subtract write permission from others
+alias private='chmod -R g=u,o-w'

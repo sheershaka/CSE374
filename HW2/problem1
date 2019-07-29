@@ -1,0 +1,25 @@
+# Sheershak Agarwal
+# HW2
+# Problem 1
+# 12 April 2019
+
+# echo command prints a line of text written after it
+echo GoHuskies
+
+# the former command puts the text 'GoHuskies' in the file GoHuskies and then
+# the latter command prints the text inside the file GoHuskies
+echo GoHuskies > GoHuskies
+cat GoHuskies
+
+# ls 'filename' prints the file name if it exists
+ls GoHuskies
+
+# we alrady saved the word 'GoHuskies' in the file GoHuskies
+# grep command is finding the pattern 'GoHuskies' in the file GoHuskies and then prints it
+grep 'GoHuskies' GoHuskies
+
+# created an alias named GoHuskies which prints out nothing and then called the alias
+# used !! to repeat the previous command (first it prints the command and then its output
+alias GoHuskies=''
+GoHuskies
+!!

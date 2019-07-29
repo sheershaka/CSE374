@@ -1,0 +1,3 @@
+I used the following command grep -Eo '<strong><a [^>]+>', to filter out all unwanted URLs. All the websites are in <a> but all the major websites are in <strong> tags. Then I used the command grep -Eo '(http)://[^/"]+' to remove the data other than the name of the website.
+
+Note: I changed the format of "readme" file to "readme.txt" because canvas was not letting me submit the former file. Also, I was able to upload a zip file.

@@ -1,0 +1,26 @@
+1. Sheershak Agarwal
+
+2. emacs
+
+3. wc command prints newline, word, and byte counts for each file
+   -l command prints the newline counts
+
+4. 379   438 18327 /etc/passwd
+
+5. One could kill a process either by writing 'exit' or pressing ctlr-c or using the kill command with the specific prcess ID.
+
+6. It stores the location of user's home directory.
+
+7. $PS1 - stores the default text that makes up a prompt in bash
+   $USER - stores the current username. It can be helpful when we are working		 on multiple user directories.
+
+8. We can use the find command to locate a specific file by name or extention. Like find /homes/sa1998/ -name "*.part1" searches all the files by name in /homes/sa1998 which has an extentention of .part1. Other command that could be used is locate.
+
+9. which command is used to locate the pathnames of executable files. We don't detemine where to search which is different from the find command.
+
+10. In the command 'echo Hello World! > hello', linux will save the text 'Hello World!' in a file name hello whereas in the command 'echo Hello World!', linux will display the text on the terminal.
+
+11. This command will replace the old file hello by a new file hello with the text "happy week".
+
+12. This command will the append the text in the old file hello.
+

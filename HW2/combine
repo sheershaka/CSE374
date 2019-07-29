@@ -1,0 +1,24 @@
+# Sheershak Agarwal
+# HW2
+# Problem 3
+# 12 April 2019
+
+# checking if there are less than 2 arguments
+if [ $# -lt 2 ]; then
+  echo 'less than two arguments' >&2      # printing to stderr
+  exit 1
+fi
+ 
+#checking if the first file exists
+if [ -e "$1" ]; then
+  echo 'Error: first file exists' >&2     # printing to stderr
+  exit 1
+fi
+
+RESULT="$1"
+
+shift
+
+cat "$@" 2>"$RESULT"                     # 2> means redirecting stderr to variable RESULT
+
+exit 0

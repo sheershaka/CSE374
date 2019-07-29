@@ -1,0 +1,12 @@
+#Sheershak Agarwal
+#HW3
+#Problem 4
+#22 April 2019
+
+Answer 1: The third and fourth line sets the lables of axis. The fifth line sets the
+range of x axis. Line 6 sets the output file and line 7 plots the graph	from the data
+in results.txt file.
+
+Answer 2: There	doesn't	seen to	be any trend between the popularity of the site	and
+the size of its index.html. Yes, I expected this result	as I thought most the
+websites will have a smaller insex.html.
