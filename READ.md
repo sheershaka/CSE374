@@ -1,5 +1,5 @@
-__HW1__: getting familiar with the **basics of the Linux shel** and the range of commands that are included 
-     in most **Linux distributions**.
+**HW1**: getting familiar with the basics of the Linux shel and the range of commands that are included 
+     in most Linux distributions.
      
 **HW2**: shell commands and with writing short shell scripts in bash.
 
@@ -12,3 +12,8 @@ __HW1__: getting familiar with the **basics of the Linux shel** and the range of
 **HW5**: build programs to implement T9 predictive text, a text input mode developed originally for cell phones 
      and still used for numeric keypads.
      https://courses.cs.washington.edu/courses/cse374/19sp/homework/hw5.html
+     
+ **HW6**: develop and benchmark a memory management package.
+     https://courses.cs.washington.edu/courses/cse374/19sp/homework/hw6.html
+     
+ **HW7**: the implementation of a C++ type for Rational numbers.
